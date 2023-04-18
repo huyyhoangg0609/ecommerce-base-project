@@ -1,5 +1,5 @@
-# nestjs-codebase-project
-This project is codebase for NestJS projects
+# ecommerce-base-project
+This project is Ecommerce project based on NestJS Framework
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>

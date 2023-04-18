@@ -1,4 +1,4 @@
-# nestjs-codebase-project
+# ecommerce-base-project
 This project is codebase for NestJS projects
 
 <p align="center">

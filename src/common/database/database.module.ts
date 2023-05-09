@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 
@@ -5,11 +6,13 @@ import { TypeOrmModule } from "@nestjs/typeorm";
     imports: [
         TypeOrmModule.forRoot({
             type: 'postgres',
-            host: process.env.POSTGRES_HOST,
-            port: parseInt(process.env.POSTGRES_PORT),
-            username: process.env.POSTGRES_USERNAME,
-            password: process.env.POSTGRES_PASSWORD,
-            database: process.env.POSTGRES_DATABASE,
+            host: 'localhost',
+            port: 5432,
+            username: 'postgres',
+            password: 'Hoang123',
+            database: 'ecommerce',
+            synchronize: true,
+            entities: ['dist/modules/**/*.entity.js'],
         }),
     ],
 })

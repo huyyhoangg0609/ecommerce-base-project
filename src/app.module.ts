@@ -1,3 +1,4 @@
+import { JwtStrategy } from './modules/auth/strategies/jwt.strategy';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
@@ -13,9 +14,9 @@ import { UserModule } from './modules/user/user.module';
       isGlobal: true,
     }),
     DatabaseModule,
-    AuthModule, 
+    AuthModule,
     UserModule],
-  controllers: [AppController],
+  controllers: [AppController], 
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
